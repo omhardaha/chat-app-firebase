@@ -1,0 +1,39 @@
+html {
+	-ms-overflow-style: -ms-autohiding-scrollbar;
+	scroll-behavior: smooth;
+}
+
+@import url("https://fonts.googleapis.com/css2?family=Cinzel&display=swap");
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    scroll-behavior: smooth;
+}
+body{
+    background-color: #1f66a00e;
+}
+textarea:focus,
+input:focus {
+	outline: none;
+}
+
+*::-webkit-scrollbar {
+	width: 3px;
+	background: transparent;
+}
+
+*::-webkit-scrollbar-thumb {
+	border-radius: 2px;
+	background-color: #26a5f94a;
+}
+*::-webkit-scrollbar-thumb:hover {
+	border-radius: 2px;
+	background-color: #26a5f960;
+}
