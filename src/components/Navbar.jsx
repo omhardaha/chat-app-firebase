@@ -23,12 +23,12 @@ export default function Navbar() {
 
                 <div className='flex items-center'>
                     
-                    <div className='p-1 ml-2 hover:bg-gray-200 rounded-full'>
+                    {/* <div className='p-1 ml-2 hover:bg-gray-200 rounded-full'>
                         <BsFillCameraVideoFill onClick={() => {
                             if (logoutpop) setVideoChat(false)
                             setVideoChat(!videoChat)
                         }} className=' text-xl ' />
-                    </div>
+                    </div> */}
 
                     <div className='p-1 ml-2 hover:bg-gray-200 rounded-full'>
                         <MdNotifications onClick={() => {

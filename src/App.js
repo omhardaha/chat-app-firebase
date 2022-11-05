@@ -5,12 +5,9 @@ import Login from "./Pages/Login";
 import Home from "./Pages/Home";
 
 import {
-    BrowserRouter,
-    Switch,
+    BrowserRouter, 
     Route,
     Routes,
-    Link,
-    Navigate
 } from "react-router-dom";
 import { useContext } from "react";
 import { AuthContext } from "./Context/AuthContext";
