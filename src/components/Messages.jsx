@@ -28,7 +28,7 @@ export default function Messages() {
     useEffect(() => {
         document.getElementById("message-box")?.scrollIntoView({ behavior: "smooth", block: 'center' });
         let audio = new Audio("/ring.mp3");
-        audio.play()
+        // audio.play()
     }, [messages])
 
     return (

@@ -1,16 +1,18 @@
 import React from 'react'
 import { useState } from 'react'
 import { useContext } from 'react'
-import { BsChatRightQuoteFill } from "react-icons/bs"
+import { BsChatRightQuoteFill ,BsFillCameraVideoFill} from "react-icons/bs"
 import { MdNotifications } from "react-icons/md"
 import { AuthContext } from '../Context/AuthContext'
 import Notification from './Notification'
 import LogoutPopup from './LogoutPopup'
+import VideoChat from './VideoChat'
 
 export default function Navbar() {
     const { currentUser } = useContext(AuthContext)
     const [notification, setNotification] = useState(false)
     const [logoutpop, setlogoutpop] = useState(false)
+    const [videoChat, setVideoChat] = useState(false)
     return (
         <>
             <div className="col-span-6 my-2 md:mt-4  lg:mx-10 flex justify-between px-10" >
@@ -20,6 +22,14 @@ export default function Navbar() {
                 </div>
 
                 <div className='flex items-center'>
+                    
+                    <div className='p-1 ml-2 hover:bg-gray-200 rounded-full'>
+                        <BsFillCameraVideoFill onClick={() => {
+                            if (logoutpop) setVideoChat(false)
+                            setVideoChat(!videoChat)
+                        }} className=' text-xl ' />
+                    </div>
+
                     <div className='p-1 ml-2 hover:bg-gray-200 rounded-full'>
                         <MdNotifications onClick={() => {
 
@@ -38,6 +48,7 @@ export default function Navbar() {
             <>
                 {notification && <Notification setNotification = {setNotification}/>}
                 {logoutpop && <LogoutPopup setlogoutpop = {setlogoutpop}/>}
+                {! videoChat && <VideoChat setVideoChat = {setVideoChat}/>}
             </>
         </>
     )

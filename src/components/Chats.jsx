@@ -25,7 +25,7 @@ export default function Chats() {
                 if (data.chatId === "null") {
                     if (chats) {
                         if (Object.entries(doc.data()).length > 0) {
-                            console.log(Object.entries(doc.data())[0][1]);
+                            // console.log(Object.entries(doc.data())[0][1]);
                             dispatch({ type: "CHANGE_USER", payload: Object.entries(doc.data())[0][1].userInfo })
                         }
                     }
