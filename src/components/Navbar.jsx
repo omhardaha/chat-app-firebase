@@ -1,7 +1,7 @@
 import React from 'react'
 import { useState } from 'react'
 import { useContext } from 'react'
-import { BsChatRightQuoteFill ,BsFillCameraVideoFill} from "react-icons/bs"
+import { BsChatRightQuoteFill} from "react-icons/bs"
 import { MdNotifications } from "react-icons/md"
 import { AuthContext } from '../Context/AuthContext'
 import Notification from './Notification'
@@ -48,7 +48,7 @@ export default function Navbar() {
             <>
                 {notification && <Notification setNotification = {setNotification}/>}
                 {logoutpop && <LogoutPopup setlogoutpop = {setlogoutpop}/>}
-                {! videoChat && <VideoChat setVideoChat = {setVideoChat}/>}
+                {/* {! videoChat && <VideoChat setVideoChat = {setVideoChat}/>} */}
             </>
         </>
     )

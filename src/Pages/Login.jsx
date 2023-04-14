@@ -15,15 +15,15 @@ export default function Register() {
 
     const user1 = (e) => {
         e.preventDefault();
-        setEmail("tony@tony.tony")
-        setPassword("tony@tony.tony")
+        setEmail("user1@user1.user1")
+        setPassword("user1@user1.user1")
         // setTimeout(() => handleSubmit(e), 1000);
         // handleSubmit(e);
     }
     const user2 = (e) => {
         e.preventDefault();
-        setEmail("elon@elon.elon")
-        setPassword("elon@elon.elon")
+        setEmail("user2@user2.user2")
+        setPassword("user2@user2.user2")
         // setTimeout(() => handleSubmit(e), 1000);
     }
 
@@ -79,9 +79,9 @@ export default function Register() {
                                     <input autocomplete="off" value={password} onChange={(e) => setPassword(e.target.value)} className=' focus:drop-shadow-lg bg-white text-sm rounded-lg w-full p-3 px-5' type="password" placeholder='Password' />
                                     <button style={{ backgroundColor: "rgb(254 107 104)" }} className='bg-white text-sm hover:drop-shadow-xl  drop-shadow-lg rounded-lg w-full text-white p-3 px-5' onClick={handleSubmit}>Sign In</button>
 
-                                    <button style={{ backgroundColor: "rgb(254 107 104)" }} className='bg-white text-sm hover:drop-shadow-xl  drop-shadow-lg rounded-lg w-full text-white p-3 px-5' onClick={user1}>Use Tony Account</button>
+                                    <button style={{ backgroundColor: "rgb(254 107 104)" }} className='bg-white text-sm hover:drop-shadow-xl  drop-shadow-lg rounded-lg w-full text-white p-3 px-5' onClick={user1}>Use user1 Account</button>
 
-                                    <button style={{ backgroundColor: "rgb(254 107 104)" }} className='bg-white text-sm hover:drop-shadow-xl  drop-shadow-lg rounded-lg w-full text-white p-3 px-5' onClick={user2}>Use Elon Account</button>
+                                    <button style={{ backgroundColor: "rgb(254 107 104)" }} className='bg-white text-sm hover:drop-shadow-xl  drop-shadow-lg rounded-lg w-full text-white p-3 px-5' onClick={user2}>Use user2 Account</button>
 
                                     {error && <p className='bg-white rounded-lg text-center text-sm p-3 px-5 text-red-500'>Oops :  Invalid Credentials</p>}
 
